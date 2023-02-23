@@ -10,15 +10,27 @@
     scrollbar-color: #ff4d05 #ffffff;
 }
 
-  *::-webkit-scrollbar {
+*::selection {
+    background-color: #ff4d05;
+}
+
+span::selection {
+    background-color: var(--text-color);
+}
+
+.active::selection {
+    background-color: var(--text-color);
+}
+
+*::-webkit-scrollbar {
     width: 6px;
   }
 
-  *::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: #ffffff00;
-  }
+}
 
-  *::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: #ff4d05;
     border-radius: 5px;
     border: 2px solid #ffffff00;
@@ -36,7 +48,7 @@
 }
 
 body {
-    background: var(--bg-color);
+    background: #1b1411;
     color: var(--text-color);
 }
 
@@ -243,4 +255,19 @@ header.sticky {
     font-size: var(--p-font);
     line-height: 1.8;
     margin-bottom: 4rem;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text p {
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.main-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
 }
