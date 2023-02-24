@@ -280,6 +280,18 @@ header.sticky {
     margin-top: 5rem;
 }
 
+@media screen and (max-width:1160px) {
+    .portfolio-content {
+        grid-template-columns: repeat(2, minmax(250px, auto));
+    }
+}
+
+@media screen and (max-width:768px) {
+    .portfolio-content {
+        grid-template-columns: repeat(1, minmax(250px, auto));
+    }
+}
+
 .row {
     position: relative;
     overflow: hidden;
